@@ -7,3 +7,6 @@ class Sequential(Container):
         for module in self.modules:
             symb_output = module.symb_forward(symb_output)
         return symb_output
+
+    def subview(self, start=0, end=None):
+        return Sequential(*self.modules[start:end])
