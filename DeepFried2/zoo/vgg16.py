@@ -1,4 +1,4 @@
-import DeepFried as df
+import DeepFried2 as df
 from . import vgg as _vgg
 
 
